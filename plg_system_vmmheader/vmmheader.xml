@@ -46,4 +46,8 @@
 
         </fields>
     </config>
+
+    <updateservers>
+        <server type="extension" name="VMMHeader Update Server">https://raw.githubusercontent.com/VillaesterModerneMedien/plg_system_vmmheader/main/update.xml</server>
+    </updateservers>
 </extension>

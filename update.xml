@@ -10,6 +10,7 @@
         <downloads>
             <downloadurl type="full" format="zip">https://github.com/VillaesterModerneMedien/plg_system_vmmheader/releases/download/v1.0.1/plg_system_vmmheader_v.1.0.1.zip</downloadurl>
         </downloads>
+        <targetplatform name="joomla" version="[45].[1234567890]"/>
     </update>
     <update>
         <name>VMM Header Plugin Updates</name>
