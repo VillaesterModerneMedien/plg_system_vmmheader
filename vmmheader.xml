@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="system" method="upgrade">
+    <name>plg_system_vmmheader</name>
+    <author>Kiki Schueling</author>
+    <creationDate>January 2024</creationDate>
+    <authorEmail>info@whykiki.de</authorEmail>
+    <authorUrl>whykiki.de</authorUrl>
+    <version>1.0.0</version>
+    <description>VMM Header - add Scripts </description>
+    <files>
+        <filename plugin="vmmheader">vmmheader.php</filename>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                        name="head"
+                        type="textarea"
+                        label="Code Header"
+                        description=""
+                        width="300"
+                        filter="raw"
+                />
+                <field
+                        name="body"
+                        type="textarea"
+                        label="Code Body Top"
+                        description=""
+                        width="300"
+                        filter="raw"
+                />
+
+            </fieldset>
+
+        </fields>
+    </config>
+</extension>

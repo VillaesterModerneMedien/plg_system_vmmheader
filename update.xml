@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<updates>
+
+    <update>
+        <name>VGRD Package Updates</name>
+        <description>Some description</description>
+        <element>pkg_vgrd</element>
+        <client>0</client>
+        <type>package</type>
+        <version>2.0.7</version>
+        <downloads>
+            <downloadurl type="full" format="zip">http://jupdate.autohausen.ag/jupdate_hF64Ed2kbUzqw9820mljsuv6xQ/2.0.7/pkg_vgrd_2.0.7.zip</downloadurl>
+        </downloads>
+        <tags>
+            <tag>stable</tag>
+        </tags>
+        <targetplatform name="joomla" version="4"/>
+    </update>
+</updates>
