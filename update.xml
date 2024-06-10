@@ -5,8 +5,7 @@
     <update>
         <name>VMM Header Plugin Updates</name>
         <element>plg_system_vmmheader</element>
-        <client>0</client>
-        <type>package</type>
+        <type>plugin</type>
         <version>1.0.1</version>
         <downloads>
             <downloadurl type="full" format="zip">https://github.com/VillaesterModerneMedien/plg_system_vmmheader/releases/download/v1.0.1/plg_system_vmmheader_v.1.0.1.zip</downloadurl>
