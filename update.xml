@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <updates>
 
-
     <update>
         <name>VMM Header Plugin Updates</name>
-        <element>plg_system_vmmheader</element>
+        <element>vmmheader</element>
         <type>plugin</type>
         <version>1.0.1</version>
         <downloads>
@@ -15,6 +14,5 @@
         </tags>
         <targetplatform name="joomla" version="4"/>
     </update>
-
 
 </updates>
