@@ -26,23 +26,22 @@ class PlgSystemVmmheader extends JPlugin
 
     public function onAfterRender()
     {
+        $app = Factory::getApplication();
 
-        $app    = Factory::getApplication();
-
-        if($app->isClient('site'))
-        {
-
+        if ($app->isClient('site')) {
             $params = $this->params;
 
             $headerCode = $params->get('head');
             $bodyCode = $params->get('body');
+            $footerCode = $params->get('footer');
 
             $updatedHtmlContentHead = preg_replace('/(<head[^>]*>)/i', '$1' . $headerCode, $app->getBody(), 1);
 
-
             $updatedHtmlContentBody = preg_replace('/(<body[^>]*>)/i', '$1' . $bodyCode, $updatedHtmlContentHead);
 
-            $app->setBody($updatedHtmlContentBody);
+            $updatedHtmlContentFooter = preg_replace('/(<\/body>)/i', $footerCode . '$1', $updatedHtmlContentBody);
+
+            $app->setBody($updatedHtmlContentFooter);
         }
     }
 }

@@ -5,11 +5,14 @@
     <creationDate>January 2024</creationDate>
     <authorEmail>info@whykiki.de</authorEmail>
     <authorUrl>whykiki.de</authorUrl>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <description>VMM Header - add Scripts </description>
     <files>
         <filename plugin="vmmheader">vmmheader.php</filename>
     </files>
+    <updateservers>
+        <server type="extension" name="VMMHeader Update Server">https://raw.githubusercontent.com/VillaesterModerneMedien/plg_system_vmmheader/main/update.xml</server>
+    </updateservers>
     <config>
         <fields name="params">
             <fieldset name="basic">
@@ -25,6 +28,15 @@
                         name="body"
                         type="textarea"
                         label="Code Body Top"
+                        description=""
+                        width="300"
+                        filter="raw"
+                />
+
+                <field
+                        name="footer"
+                        type="textarea"
+                        label="Code Body Bottom"
                         description=""
                         width="300"
                         filter="raw"
