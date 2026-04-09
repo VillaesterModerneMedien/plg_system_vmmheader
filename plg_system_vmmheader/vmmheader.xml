@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="3.1" type="plugin" group="system" method="upgrade">
+<extension type="plugin" group="system" method="upgrade">
     <name>plg_system_vmmheader</name>
     <author>Kiki Schueling</author>
-    <creationDate>January 2024</creationDate>
+    <creationDate>April 2026</creationDate>
     <authorEmail>info@whykiki.de</authorEmail>
     <authorUrl>whykiki.de</authorUrl>
-    <version>1.0.2</version>
-    <description>VMM Header - add Scripts </description>
+    <version>2.0.0</version>
+    <description>VMM Header - Add custom scripts to head, body top and body bottom</description>
+    <namespace path="src">VillaesterModerneMedien\Plugin\System\VmmHeader</namespace>
     <files>
-        <filename plugin="vmmheader">vmmheader.php</filename>
+        <folder plugin="vmmheader">services</folder>
+        <folder>src</folder>
     </files>
     <updateservers>
         <server type="extension" name="VMMHeader Update Server">https://raw.githubusercontent.com/VillaesterModerneMedien/plg_system_vmmheader/main/update.xml</server>
@@ -17,33 +19,30 @@
         <fields name="params">
             <fieldset name="basic">
                 <field
-                        name="head"
-                        type="textarea"
-                        label="Code Header"
-                        description=""
-                        width="300"
-                        filter="raw"
+                    name="head"
+                    type="textarea"
+                    label="Code Header"
+                    description=""
+                    rows="10"
+                    filter="raw"
                 />
                 <field
-                        name="body"
-                        type="textarea"
-                        label="Code Body Top"
-                        description=""
-                        width="300"
-                        filter="raw"
+                    name="body"
+                    type="textarea"
+                    label="Code Body Top"
+                    description=""
+                    rows="10"
+                    filter="raw"
                 />
-
                 <field
-                        name="footer"
-                        type="textarea"
-                        label="Code Body Bottom"
-                        description=""
-                        width="300"
-                        filter="raw"
+                    name="footer"
+                    type="textarea"
+                    label="Code Body Bottom"
+                    description=""
+                    rows="10"
+                    filter="raw"
                 />
-
             </fieldset>
-
         </fields>
     </config>
 </extension>

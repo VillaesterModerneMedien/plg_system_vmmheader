@@ -6,6 +6,18 @@
         <type>plugin</type>
         <folder>system</folder>
         <client>site</client>
+        <version>2.0.0</version>
+        <downloads>
+            <downloadurl type="full" format="zip">https://github.com/VillaesterModerneMedien/plg_system_vmmheader/releases/download/v2.0.0/plg_system_vmmheader_2.0.0.zip</downloadurl>
+        </downloads>
+        <targetplatform name="joomla" version="[56].[1234567890]"/>
+    </update>
+    <update>
+        <name>VMM Header Plugin Updates</name>
+        <element>vmmheader</element>
+        <type>plugin</type>
+        <folder>system</folder>
+        <client>site</client>
         <version>1.0.2</version>
         <downloads>
             <downloadurl type="full" format="zip">https://github.com/VillaesterModerneMedien/plg_system_vmmheader/releases/download/v1.0.2/plg_system_vmmheader_1.0.2.zip</downloadurl>
@@ -33,6 +45,5 @@
             <downloadurl type="full" format="zip">https://github.com/VillaesterModerneMedien/plg_system_vmmheader/releases/download/v1.0.1/plg_system_vmmheader_v.1.0.1.zip</downloadurl>
         </downloads>
     </update>
-
 
 </updates>
